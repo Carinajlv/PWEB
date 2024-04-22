@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //primeira forma
+         var funcionario1 = new Object();
+        funcionario1.matricula = "00001234";
+        funcionario1.nome = "Vitor";
+        funcionario1.funcao = "Gestor";
+        alert("matricula=" + funcionario1.matricula + 
+            "nome=" + funcionario1.nome +
+            "funçao" + funcionario1.funcao);
+
+        alert (`matricula=${funcionario1.matricula} 
+                nome=${funcionario1.nome}
+                função=${funcionario1.funcao}`);
+
+        //segunda forma
+        var funcionario2 = {};
+        funcionario2.matricula = "4321";
+        funcionario2["nome"] = "Joas";
+        funcionario2["funcao"] = "Analista";
+
+        alert ("matricula=" + funcionario2.matricula +
+               "nome=" + funcionario2.nome +
+               "funcao=" + funcionario2.funcao);
+
+
+        //terceira forma
+        var funcionario3 = {
+            matricula: "20212223",
+            nome: "David",
+            funcao: "Desenvolvedor"
+        };
+        alert ("matricula=" + funcionario3.matricula +
+               "nome=" + funcionario3.nome +
+                "funcao=" + funcionario3.funcao);
+    </script>
+   
+</body>
+</html>
